@@ -293,6 +293,7 @@ namespace GameService
                         myRoom.field[x][y] = 0;
                         myRoom.field[x][++y] = key;
                         return true;
+                        //alex123
                         //ZepsenDmytro
                     }
                     break;
