@@ -15,3 +15,12 @@ d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\D
 d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\EntityFramework.dll
 d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\EntityFramework.xml
 d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\ru\EntityFramework.resources.dll
+D:\Profiles\07060\repo\server\GameService\bin\Debug\GameService.dll.config
+D:\Profiles\07060\repo\server\GameService\bin\Debug\GameService.dll
+D:\Profiles\07060\repo\server\GameService\bin\Debug\GameService.pdb
+D:\Profiles\07060\repo\server\GameService\bin\Debug\EntityFramework.dll
+D:\Profiles\07060\repo\server\GameService\bin\Debug\EntityFramework.xml
+D:\Profiles\07060\repo\server\GameService\bin\Debug\ru\EntityFramework.resources.dll
+D:\Profiles\07060\repo\server\GameService\obj\Debug\GameService.csprojResolveAssemblyReference.cache
+D:\Profiles\07060\repo\server\GameService\obj\Debug\GameService.dll
+D:\Profiles\07060\repo\server\GameService\obj\Debug\GameService.pdb

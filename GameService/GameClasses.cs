@@ -136,22 +136,15 @@ namespace GameService
         }
 
         //нажатие игровой клавиши пользователем
-        internal void MakeMove(int KeyCode, int id)
+        internal void MakeMove(int KeyCode,int id)
         {
-            for (int i = 0; i < objects.Count; i++)
+            try
             {
-                if (objects[i] is Player)
-                {
-                    Player pl = (objects[i] as Player);
-
-                    if (pl.id == id)
-                    {
-                        if (pl.Move(KeyCode))
-                            UpdateMap();
-                        return;
-                    }
-                }
+                Player player = this.objects.First(x => x is Player && x.id == id) as Player;
+                if (player.Move(KeyCode))
+                    UpdateMap();
             }
+            catch (Exception ex) { }
         }
 
         //поиск и удаление пользователя в комнате при экстренном отключении 
@@ -244,15 +237,12 @@ namespace GameService
     //класс который предсталяет игрока на карте
     internal class Player : GameObject
     {
-        //бомба у игрока
-        Bomb bombs;
-
         //хп игрока
         int hp;
 
         //конструктор
         public Player(Room r, int x, int y)
-            : base(r,x,y)
+            : base(r, x, y)
         {
             hp = 0;
             // key = 7;
@@ -271,46 +261,51 @@ namespace GameService
         //передвижение игрока/установка бомбы
         public bool Move(int keyCode)
         {
-
             switch (keyCode)
             {
                 case (1):
                     if (x - 1 >= 0 && myRoom.field[x - 1][y] == 0)
                     {
-                        x--;
+                        myRoom.field[x][y] = 0;
+                        myRoom.field[--x][y] = key;
                         return true;
                     }
                     break;
                 case (2):
-                    if (y + 1 < myRoom.field.GetLength(1) && myRoom.field[x][y + 1] == 0)
+                    if (x + 1 < myRoom.field.GetLength(0) && myRoom.field[x + 1][y] == 0)
                     {
-                        y++;
+                        myRoom.field[x][y] = 0;
+                        myRoom.field[++x][y] = key;
                         return true;
                     }
                     break;
                 case (3):
-                    if (x + 1 < myRoom.field.GetLength(0) && myRoom.field[x + 1][y] == 0)
+                    if (y - 1 >= 0 && myRoom.field[x][y - 1] == 0)
                     {
-                        x++;
+                        myRoom.field[x][y] = 0;
+                        myRoom.field[x][--y] = key;
                         return true;
                     }
                     break;
                 case (4):
-                    if (y - 1 >= 0 && myRoom.field[x][y - 1] == 0)
+                    if (y + 1 < myRoom.field.GetLength(1) && myRoom.field[x][y + 1] == 0)
                     {
-                        y--;
+                        myRoom.field[x][y] = 0;
+                        myRoom.field[x][++y] = key;
                         return true;
                     }
                     break;
 
                 case (5):
-                   bombs = new Bomb(myRoom,x,y); //???
+                    {
+                        myRoom.objects.Add(new Bomb(myRoom, x, y));
+                        return true;
+                    }
                     break;
             }
             return false;
 
         }
-
     }
 
     //класс который представляет бомбу

@@ -116,17 +116,23 @@ namespace GameService
         }
 
         //Вызывается от клиента при нажатии клавиши
-        public void MakeMove(int KeyCode, string roomName, int id)
+        public void MakeMove(int KeyCode, string roomName,int id)
         {
             //Находим  нашу комнату и вызывам метод 
-            for (int i = 0; i < rooms.Count; i++)
+            try
             {
-                if (roomName == rooms[i].roomName)
+                this.mutex.WaitOne();
+                for (int i = 0; i < rooms.Count; i++)
                 {
-                    rooms[i].MakeMove(KeyCode, id);
-                    break;
+                    if (roomName == rooms[i].roomName)
+                    {
+                        rooms[i].MakeMove(KeyCode,id);
+                        break;
+                    }
                 }
             }
+            catch (Exception) { }
+            finally { this.mutex.ReleaseMutex(); }
         }
 
         //выход из комнаты
