@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище BombsModel" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Хранилище BombsModelContainer">
+    <EntitySet Name="Users" EntityType="Хранилище BombsModel.Users" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="logins" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="pass" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="win" Type="int" Nullable="false" />
+    <Property Name="countgame" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

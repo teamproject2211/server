@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BombsModelContainer" CdmEntityContainer="BombsEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BombsModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="logins" ColumnName="logins" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="win" ColumnName="win" />
+          <ScalarProperty Name="countgame" ColumnName="countgame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

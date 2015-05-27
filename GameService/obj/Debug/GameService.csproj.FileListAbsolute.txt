@@ -1,0 +1,17 @@
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\GameService.dll.config
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\GameService.dll
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\GameService.pdb
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\EntityFramework.dll
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\EntityFramework.xml
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\bin\Debug\ru\EntityFramework.resources.dll
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\obj\Debug\GameService.csprojResolveAssemblyReference.cache
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\obj\Debug\GameService.dll
+d:\profiles\07060\documents\visual studio 2012\Projects\GameService_BOMBS\GameService\obj\Debug\GameService.pdb
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\obj\Debug\GameService.dll
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\obj\Debug\GameService.pdb
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\GameService.dll.config
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\GameService.dll
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\GameService.pdb
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\EntityFramework.dll
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\EntityFramework.xml
+d:\Profiles\gevorkyan_ag\Desktop\TeamProject\GameService_BOMBS\GameService\bin\Debug\ru\EntityFramework.resources.dll
